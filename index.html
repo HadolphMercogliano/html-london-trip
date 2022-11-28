@@ -13,10 +13,13 @@
 <body>
     <!-- titolo e presentazione -->
     <header>
+
         <h1>Il mio Viaggio A Londra</h1>
-        <img src="./img/pexels-bill-emrich-230794-0.jpg" alt="Tamigi vista 1">
-        <img src="./img/pexels-bill-emrich-230794-1.jpg" alt="Tamigi vista 2">
-        <img src="./img/pexels-bill-emrich-230794-2.jpg" alt="Tamigi vista 3">
+            <picture>    <!-- tag semantico per le foto -->
+            <img src="./img/pexels-bill-emrich-230794-0.jpg" alt="Tamigi vista 1">
+            <img src="./img/pexels-bill-emrich-230794-1.jpg" alt="Tamigi vista 2">
+            <img src="./img/pexels-bill-emrich-230794-2.jpg" alt="Tamigi vista 3">
+        </picture>
         <hr>
     </header>
 
@@ -25,31 +28,36 @@
         <section>
             <h2>Le mie spese</h2>
             <table>
-                <tr>
-                    <td><strong>Numero</strong></td>
-                    <td><strong>Descrizione</strong></td>
-                    <td><strong>Costo</strong></td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Biglietto Aereo</td>
-                    <td>120€</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Biglietto Aereo</td>
-                    <td>120€</td>                    
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Biglietto Aereo</td>
-                    <td>120€</td>                    
-                </tr>
-                <tr>
-                    <td>Totale</td>
-                    <td></td>
-                    <td>360€</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Numero</th> <!-- da usare <th> perchè grassetta da solo. strong da importanza al testo per il motore di ricerca -->
+                        <th>Descrizione</th> <!-- <th> ha formattazione text-align:centert -->
+                        <th>Costo</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Biglietto Aereo</td>
+                        <td>120€</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Biglietto Aereo</td>
+                        <td>120€</td>                    
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Biglietto Aereo</td>
+                        <td>120€</td>                    
+                    </tr>
+                    <tr>
+                        <td>Totale</td>
+                        <td></td>
+                        <td>360€</td>
+                    </tr>
+                </tbody>
             </table>
 
             <hr>
@@ -58,10 +66,10 @@
         <section>
             <h3>Cose da fare</h3>
             <ul>
-                <li>Visitare la Tower of London &#9747;</li>
-                <li>Visitare greenwich &#10003;</li>
-                <li>Ascoltare un artista di strada a Covent Garden &#10003; </li>
-                <li>Mangiare il tipico Fish and Chips inglese &#9747; </li>
+                <li>Visitare la Tower of London <b>&check;</b></li>
+                <li>Visitare greenwich <b>&cross;</b></li>
+                <li>Ascoltare un artista di strada a Covent Garden <b>&cross;</b> </li>
+                <li>Mangiare il tipico Fish and Chips inglese <b>&check;</b> </li>
             </ul>
             <hr>
         </section>
@@ -72,16 +80,16 @@
                 <li>
                     Numeri utili di emergenza
                     <ul>
-                        <li><strong>999</strong> - Emergenza</li>
-                        <li><strong>101</strong> - Numero Polizia</li>
-                        <li><strong>111</strong> - Numero assistenza Medica</li>
+                        <li><b>999</b> - Emergenza</li>
+                        <li><b>101</b> - Numero Polizia</li>
+                        <li><b>111</b> - Numero assistenza Medica</li>
                     </ul>
                 </li>
                 <li>
                     Hotel
                     <ul>
-                        <li><strong>Nome hotel:</strong> Buckingham Palace</li>
-                        <li><strong>Indirizzo hotel</strong> Westminster, London SW1A 1AA, Regno Unito</li>
+                        <li><b>Nome hotel:</b> Buckingham Palace</li>
+                        <li><b>Indirizzo hotel</b> Westminster, London SW1A 1AA, Regno Unito</li>
                     </ul>
                 </li>
                 <li>
@@ -99,8 +107,11 @@
     <!-- foto -->
     <footer>
         <h3>Le foto</h3>
-        <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" alt="Cattedrale di St. Paul e Millennium Bridge">
-        <img src="https://thetraveljam.com/wp-content/uploads/2020/01/DSC01329-400x400.jpeg" alt="Tipico pub e cab inglese">
+        <picture>
+            <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" alt="Cattedrale di St. Paul e Millennium Bridge">
+            <img src="https://thetraveljam.com/wp-content/uploads/2020/01/DSC01329-400x400.jpeg" alt="Tipico pub e cab inglese">
+
+        </picture>
     </footer>
     
 </body>
